@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "DockerHub Search",
+  "version": "0.1",
+
+  "description": "Adds DockerHub to your search engine.",
+  "homepage_url": "https://github.com/Taso87/dockerhub_search",
+  "icons": {
+    "48": "favicon48.png",
+    "96": "favicon96.png"
+  },
+
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "DockerHub",
+      "keyword": "@dh",
+      "search_url": "https://hub.docker.com/search?q={searchTerms}&type=image"
+    }
+  }
+}
